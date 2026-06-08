@@ -1,28 +1,42 @@
-# Plantilla_metodos
+ Métodos Numéricos II
+ 
+![Python](https://img.shields.io/badge/Python-3.x-blue) ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red) ![License](https://img.shields.io/badge/License-MIT-green)
+ 
+Plantilla interactiva para el curso de Métodos Numéricos II. Implementa métodos numéricos con visualización gráfica usando Streamlit y Plotly.
+ 
+  Estructura del Proyecto
+ 
+Metodos_Numericos_II/
+├── Main.py              # Aplicación principal
+├── pages/               # Páginas de cada método numérico
+├── requirements.txt     # Dependencias del proyecto
+├── Im1.png              # Imagen para la interfaz
+└── README.md            # Este archivo
+```
+ 
+##  Instalación
+ 
 
+# 1. Clonar el repositorio
+git clone https://github.com/JessiAl06/Metodos_Numericos_II.git
+ 
+# 2. Instalar dependencias
+pip install -r requirements.txt
+ 
+# 3. Ejecutar la aplicación
+streamlit run Main.py
+```
+ 
+Métodos Implementados
+ 
+| Método | Estado |
+|--------|--------|
+| Métodos de optimización | Incluido |
+| BFGS |  Pendiente |
+| Integración numérica | Pendiente |
+| Derivación numérica | Pendiente |
+ 
 
-Plantilla para proyecto de metodos numericos II
-
-Contiene algunos metodos programados con graficación incluida solo falta completar los faltantes(BFGS, Integracion, Derivacion), tambien puedes agregar tus propios metodo o modificar cualquier parte del codigo.
-
-## Graficacion con plotly 
-
-Para graficar una funcion crea una lista con los valores de $x,y$ y $z$ segun sea el caso crea un objeto con 
-
-plo = gro.Figure()
-
-posteriormente añade un trazo con 
-
-plo.add_trace(gro.Scatter(x=valores de x,y=valores de y))
-
-
-usa gro.Scatter para graficar figuras en 2 dimensiones. Para graficar figuras en 3 dimensiones crea un array con las coordenadas de x,y,z 
-
-coordenadas = $[[x_1,y_1,z_1],---,[x_n,y_n,z_n]]$
-
-y añadade un trazo a la figura plo con la funcion gro.Surface
-
- plo.add_trace(gro.Surface(z=coordenadas))
-
-
-
+ 
+Basado en la plantilla de [SergioSKA27](https://github.com/SergioSKA27/Plantilla_metodos).
+ 
